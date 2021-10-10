@@ -7,15 +7,15 @@ router.get('/', (req, res) => {
     res.sendFile(__path + './home.html')
 })
 
-router.get('/api', (req, res) => {
+router.get('/web', (req, res) => {
     res.sendFile(__path + './index.html')
 })
 
-router.get('/api/about', (req, res) => {
+router.get('/web/about', (req, res) => {
     res.sendFile(__path + './about.html')
 })
 
-router.get('/api/news', (req, res) => {
+router.get('/web/news', (req, res) => {
     res.redirect('https://raw.githubusercontent.com/Zhirrr/My-SQL-Results/main/Berita.json')
 })
 
